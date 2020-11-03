@@ -13,7 +13,7 @@ const twoStrings = (str1, str2) => {
   console.log(sepStr1, sepStr2);
 
   for (let i = 0; i < sepStr1.length && sepStr2.length; i++) {
-    console.log(i.length);
+
   }
 };
 
