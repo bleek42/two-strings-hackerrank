@@ -4,24 +4,40 @@
 
 // Complete the function twoStrings in the editor below. It should return a string, either YES or NO based on whether the strings share a common substring. 
 
-// test
-
-
-
 
 const twoStrings = (str1, str2) => {
-  const hashMap = new Map();
-  hashMap.set('input1', str1);
-  hashMap.set('input2', str2);
 
-  for (const [key, value] of hashMap.entries()) {
-    console.log(key, value);
+  const sepStr1 = str1.split(" ");
+  const sepStr2 = str2.split(" ");
+
+  console.log(sepStr1, sepStr2);
+
+  for (let i = 0; i < sepStr1.length && sepStr2.length; i++) {
+    console.log(i.length);
   }
-
 };
+
+
+
+
+
+// const twoStrings = (str1, str2) => {
+//   if (typeof str1 && typeof str2 !== 'string') throw new TypeError('input 1 must be a string!');
+//   // if (typeof str2 !== 'string') throw new TypeError('input 2 must be a string!');
+
+//   const strObj = {};
+//   let i = 0;
+
+//   while (i < str1.length && str2.length) {
+//     console.log(str1[i], str2[i]);
+//   }
+
+// };
 
 
 const myStr1 = 'abcd';
 const myStr2 = 'bade';
+const myBadVar1 = [1, 2];
+const myBadVar2 = false;
 
 console.log(twoStrings(myStr1, myStr2));
